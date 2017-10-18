@@ -1,0 +1,15 @@
+build:
+  box: busybox
+  steps:
+    - script:
+      name: some build task here
+      code: echo 'Nothing to do now'
+
+deploy:
+  box: node:8.6
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+      token: $GIT_TOKEN
+      domain: www.vergeliscus.com
