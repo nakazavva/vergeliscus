@@ -1,0 +1,101 @@
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body, main {
+    /* height: 100%; */
+}
+main {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Japanese";
+    font-weight: 100;
+    /* font-size: 1.9rem; */
+}
+section {
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+p {
+    padding: 0 30px;
+    text-align: left;
+}
+
+body{
+    background: url(../images/bg.jpg)
+}
+.section1{
+    /* height: 100vh; */
+}
+.section1 .wrap {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 5%;
+
+}
+.section1 .profile{
+    background-color: rgba(157,195,208,0.6);
+    text-align: left;
+    width: 90%;
+    margin-left: -9%;
+}
+.section1 .profile>p:first-child{
+    font-size: 4vw;
+    text-align: right;
+    color: #7fb7c7;
+}
+.section1 .profile>p:nth-child(2){
+    font-size: 1.1vw;
+}
+.section1 .left{
+    padding-top: 5%;
+    z-index: 1;
+}
+.section1 .right{
+    height: 100%;
+}
+.section1 .vergeliscus_top> img{
+    width: 100%;
+}
+.section1 .vergeliscus_text{
+    width: 75%;
+    margin-left: -5%;
+}
+
+.section2{
+    position: relative;
+}
+.section2>div{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.section2 .title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 4vw;
+}
+.section2 p{
+    color: #ffffff;
+    width: 60%;
+    margin: auto;
+    font-size: 1.4vw;
+    margin-top: 3%;
+    /* text-align: center; */
+}
+.section2 .btn{
+    position: absolute;
+    width: 35%;
+    bottom: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<title>Vergeliscus</title>
-<style>
-@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-html, body, main {
-    height: 100%;
-}
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Noto Sans Japanese";
-    font-weight: 100;
-    font-size: 1.9rem;
-}
-section {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-p {
-    padding: 0 30px;
-    text-align: center;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Vergeliscus</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+
+                    <img src="images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
+
+                </a>
+                <div class="navbar-burger burger" data-target="navMenuColordark-example">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="navMenuColordark-example" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://bulma.io/">
+                        Verge(XVG)とは
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/">
+                        Twitterでのコイン送信方法
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/">
+                        他の仮想通貨との違い
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section>
-            <img src="images/vergeliscus.png" width="240" height="290" />
-            <p>
-                Vergiliscus is coming soon.
-                Stay tunned!!
-            </p>
+        <section class="section1">
+            <div class="wrap">
+                <div class="left vergeliscus_top">
+                    <img src="images/vergeliscus_top.png" class="" />
+                </div>
+                <div class="right">
+                    <h1>
+                        <img src="images/vergeliscus_text.png" class="vergeliscus_text" alt="Verge非公式キャラ「バージリスク」登場！！" />
+                    </h1>
+                    <div class="profile">
+                        <p>
+                            PRPFILE
+                        </p>
+                        <p>
+                            基本的にお調子者かつビビリ。
+                            <br> まずいことがあるとすぐに隠れる。逃げるのは得意バジ。
+                            <br> 趣味は酒とギャンブルバジ。
+                            <br> 儲けるとついつい投げ銭するバジ。そして、色々投資してみるんだけど、短期で失敗するバジ。持ってると色々投げたくなるのは忍者（アルバイト中）の本分。
+                            <br> 嫁のバジ子（バージリス子）にバレないようにだけは気をつけてるバジ。
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-    <main>
+        <section class="section2">
+            <img src="images/section2_bg.png" class="bg" />
+            <div>
+
+                <h2 class="title">Verge(XVG)とは</h2>
+                <p>
+                    ビットコインの発案者であるサトシナカモト氏が本来目指していた、分散型のシステムに支えられた、匿名かつ透明性の高い仮想通貨をめざし日々改善を続けています。つまり、実利用を目指した通貨になります。
+                    <br> 「レイス・プロトコル」と呼ばれる仮想通貨史上初の新しい機能はそれをさらに促進。任意で、オープンな取引、または完全に匿名な取引を、選択できます。
+                    <br>
+                </p>
+                <p>
+                    また、実利用という側面に特化するため、ビットコインのように少ない枚数(2100万枚)ではなく、165億5500万枚という非常に多くの枚数を発行します。これはコインの不足による高騰ではなく、実利用する際に安定した価格を最終的にもたらします。
+                </p>
+            </div>
+
+            <img src="images/btn.png" class="btn" />
+        </section>
+        <main>
+            <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
