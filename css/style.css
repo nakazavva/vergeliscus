@@ -4,6 +4,9 @@
 html, body, main {
     /* height: 100%; */
 }
+body {
+    font-size: 1.4vw;
+}
 main {
     /* display: flex; */
     justify-content: center;
@@ -13,16 +16,21 @@ main {
     /* font-size: 1.9rem; */
 }
 p {
-    padding: 0 30px;
+    padding: 0 5%;
     text-align: left;
 }
 
 body{
     background: url(../images/bg.jpg)
 }
-
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 .navbar{
     font-size: 1vw;
+    height: 55px;
 }
 .navbar .navbar-brand>a>span{
     color: #50c4f3;
@@ -35,6 +43,9 @@ body{
 }
 .navbar .sns>div{
     margin: 1%;
+}
+main{
+    padding-top: 55px;
 }
 section .content-wrap{
     width: 60%;
@@ -131,7 +142,7 @@ section .content-wrap{
     color: #ffffff;
     width: 60%;
     margin: auto;
-    font-size: 1.4vw;
+    /* font-size: 1.4vw; */
     margin-top: 3%;
     /* text-align: center; */
 }
@@ -151,8 +162,8 @@ section .content-wrap{
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 120%;
+    left: -3%;
+    width: 130%;
     height: 75%;
     margin: 3% -10% 0;
     -webkit-transform-origin: left center;
@@ -176,6 +187,10 @@ section .content-wrap{
 }
 
 .section4.diagonal:before {
+    height: 95%;
+}
+
+#section4_sp.diagonal:before {
     height: 95%;
 }
 .section2 {
@@ -214,14 +229,16 @@ footer {
 .section3 .step{
     width: 30%;
     text-align: left;
+    font-size: 1vw;
 }
 .section3 .step .cell{
     position: relative;
-    height: 30%;
+    /* height: 30%; */
     background-color: #fff;
     border-left: solid 1px #000000;
     border-right: solid 1px #000000;
     border-top: solid 1px #000000;
+    padding: 1%;
 }
 .section3 .cell:last-child{
     border-bottom: solid 1px #000000;
@@ -429,7 +446,7 @@ footer {
 }
 .sns{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 40%;
 }
@@ -442,7 +459,22 @@ footer p{
     color: #000000;
 }
 
+.step ul{
+    list-style-type: decimal;
+    padding-left: 8%; 
+}
+.step p{
+    padding:3% 5%;
+}
 @media screen and (max-width: 990px){
+
+    body {
+        
+        font-size: 3vw
+    }
+    .navbar{
+        font-size: 3vw;
+    }
     section .content-wrap {
         width: 95%;
         margin: auto;
@@ -468,32 +500,34 @@ footer p{
         margin-top: -10%;
     }
     .section1 .profile>p:nth-child(2) {
-        font-size: 1vw;
+        font-size: 3vw;
         font-weight: 400;
     }
     .section2 p {
         color: #ffffff;
         width: 100%;
         margin: auto;
-        font-size: 1.4vw;
         margin-top: 3%;
     }
     .section2 .diagonal-content {
-        margin-bottom: 25%;
+        margin-bottom: 35%;
     }
     .section2 .btn {
         position: absolute;
-        width: 35%;
+        width: 65%;
         bottom: 22%;
         left: 0;
         right: 0;
         margin: auto;
     }
+    .section3 .step{
+        font-size: 3vw;
+    }
     .section3 .step-wrap >div {
         width: 90%;
     }
     footer p {
-        font-size: 1vw;
+        font-size: 4vw;
     }
     .navbar .sns {
         display: flex;
@@ -513,27 +547,60 @@ footer p{
         font-weight: bold;
         margin-bottom: 3%;
     }
-    #section4_sp .description:nth-child(odd){
+    #section4_sp .description:nth-child(odd)>div{
         background-color: rgba(200,226,240,0.5);
     }
-    #section4_sp .description:nth-child(even){
+    #section4_sp .description:nth-child(even)>div{
         background-color: rgba(255,255,255,0.5);
     }
     .description p{
         font-weight: normal;
-        font-size: 1.2vw;
+        font-size: 3vw;
         text-align: left;
-        margin: 6% 0;
+        margin: 0;
+        padding-bottom: 2%;
     }
     .description p:last-child{
         margin-bottom: 0;
     }
 
+    #section4_sp section{
+        background: url(../images/bg.jpg);
+    }
     #section4_sp:before {
         background-color: #c8e2f0;
     }
     #section4_sp .diagonal-content {
         padding-top: 15%;
+        padding-bottom: 45%;
+    }
+    .description5 .title{
+        position: static;
+    }
+
+    .title{
+        font-size: 6vw;
+        padding-top: 2%;
+        margin-bottom: 2% !important;
+    }
+    .section4_sp .btn {
+        position: absolute;
+        width: 65%;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .section4_sp .description .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4_sp .description .title img {
+        width: 6%;
+    }
+    .description_img{
+        width: 30%;
     }
 
 }

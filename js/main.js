@@ -33,7 +33,7 @@
 
     $('.navbar-item').on('click', function () {
         var tagrget = $(this).attr('href');
-        $("html,body").animate({ scrollTop: $(tagrget).offset().top });
+        $("html,body").animate({ scrollTop: $(tagrget).offset().top-55 });
         return false;
     })
 
