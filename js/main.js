@@ -36,7 +36,26 @@
         $("html,body").animate({ scrollTop: $(tagrget).offset().top-55 });
         return false;
     })
-
+    // $('#pageTop').on('click', function () {
+    //     var tagrget = $(this).attr('href');
+    //     $("html,body").animate({ scrollTop: $(tagrget).offset().top-55 });
+    //     return false;
+    // })
+    var topBtn = $('#pageTop');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        }
+        //  else {
+        //     topBtn.fadeOut();
+        // }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
     function changeTwitterWidgetDesign(){
         var $twitter_widget = $('iframe.twitter-timeline');
         var $twitter_widget_contents = $twitter_widget.contents();
