@@ -34,6 +34,7 @@ header{
 }
 .navbar .navbar-brand>a>span{
     color: #50c4f3;
+    margin-left: 10px;
 }
 .navbar .sns{
     display: flex;
@@ -52,10 +53,11 @@ section .content-wrap{
     margin: auto;
 }
 .twitter{
-    background-color: rgba(157,195,208,0.6);
+    background-color: rgba(255,255,255,0.6);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5%;
 }
 .twitter>div:first-child{
     width: 75%;
@@ -74,11 +76,19 @@ section .content-wrap{
     margin: auto;
     margin-top:  5%;
 }
+.yellow_left{
+    position: absolute;
+    top: 2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 18%;
+}
 .section1 .profile{
     /* background-color: rgba(157,195,208,0.6); */
     text-align: left;
     position: absolute;
-    top: 30%;
+    top: 11%;
     right: 2%;
     width: 65%;
 }
@@ -97,7 +107,7 @@ section .content-wrap{
 .section1 .vergeliscus_text{
     width: 57%;
     position: absolute;
-    top: -5%;
+    top: -2%;
     left: 30%;
     right: 0;
     margin: auto;
@@ -150,7 +160,7 @@ section .content-wrap{
 .section2 .btn{
     position: absolute;
     width: 35%;
-    bottom: 15%;
+    top: 62%;
     left: 0;
     right: 0;
     margin: auto;
@@ -212,7 +222,8 @@ footer {
     background-color: #00b0e9;
 }
 .section2 .diagonal-content{
-    margin-bottom: 16%;
+    margin-bottom: 20%;
+    padding-top: 2%;
 }
 
 .section4 .diagonal-content{
@@ -223,8 +234,15 @@ footer {
     text-align: center;
 }
 .section3 .sp_icon{
-    /* width: 40%;
-    margin-left: auto; */
+    position: relative;
+}
+.section3 .sp_icon>img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .section3 .step{
@@ -251,6 +269,12 @@ footer {
 }
 .section3 .step-wrap >div{
     width: 40%;
+}
+.section3 .step-wrap >div:first-child{
+    margin-right: 2%;
+}
+.section3 .step-wrap >div:last-child{
+    margin-left: 2%;
 }
 .triangle {
 	width: 60px;
@@ -281,6 +305,7 @@ footer {
 }
 .section4 .title{
     margin-top: 8%;
+    margin-bottom: 1%;
 }
 .section4 p{
     text-align: center;
@@ -475,6 +500,81 @@ footer p{
     right: 5%;
     z-index: 1000;
 }
+
+.is-countdown {
+    border: none;
+    background-color: transparent;
+}
+#campaign{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 6vw;
+    color: #fff;
+}
+.time{
+    position: relative;
+    width: 16%;
+}
+.time >img{
+    width: 100%;
+}
+.time>div{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.sep{
+    vertical-align: middle;
+    color: #000000;
+}
+.time>div.time_label{
+    top: -25%;
+    left: 0;
+    right: 0;
+    font-size: 1.5vw;
+    color: #406974;
+}
+.section5 .title{
+    color: #fff;
+    text-align: center;
+}
+.introduction_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.introduction{
+    width: 30%;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+.link >div{
+    width: 45%;
+    margin: 1%;
+}
+.link a{
+    color: #fff;
+}
+.title{
+    text-align: center;
+}
 @media screen and (max-width: 990px){
 
     body {
@@ -620,6 +720,14 @@ footer p{
         right: 0;
         z-index: 1000;
         width: 15%;
+    }
+    .yellow_left{
+        position: absolute;
+        top: 2%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 18%;
     }
 
 }
