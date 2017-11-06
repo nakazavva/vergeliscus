@@ -1,0 +1,116 @@
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body, main {
+    /* height: 100%; */
+}
+body {
+    font-size: 2vw;
+    background-color: #f0f6fd;
+    color: #6f7477;
+}
+.wrap{
+    width: 75%;
+    margin: auto;
+}
+h2{
+    margin-bottom: 0 !important;
+}
+.title>div{
+    padding: 3%;
+}
+.title>img{
+    margin: 3%;
+}
+.center{
+    text-align: center;
+}
+.section2 , .section3{
+    background-color: #b2e3f5;
+}
+section:not(:last-child){
+    margin-bottom: 4%;
+}
+.step{
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+.step .step_number{
+    font-size: 4vw;
+    color: #4d4676;
+   border-bottom: 3px solid;
+   padding-bottom: 1px;
+}
+.step>div{
+    width: 45%;
+    padding: 20px;
+    margin: 1%;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.step>div>p,.step>div>a{
+    width: 100%;
+}
+.step>div>p{
+    height: 80%;
+}
+.step img{
+    width: 30vw;
+}
+.step1>div:nth-child(3) > p,.step2>div:nth-child(2) > p{
+    align-self: start;
+}
+
+.step2>div:nth-child(3){
+    width: 92%;
+}
+.section4 p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.caution{
+    border: #e75342 solid 1px;
+}
+.caution >div{
+    border-bottom: #e75342 solid 1px;
+    background-color: #e75342;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+.caution >ul{    
+    list-style-type: disc;
+    color: #e75342;
+    font-size: 1.3vw;
+    padding: 1% 3%;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
+#pageTop{
+    position:fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 1000;
+    width: 10%;
+}
+.campaign_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+    margin-bottom: 5%;
+}
