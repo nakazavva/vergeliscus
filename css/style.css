@@ -729,5 +729,7 @@ footer p{
         right: 0;
         width: 18%;
     }
-
+    .introduction {
+        width: 48%;
+    }
 }
