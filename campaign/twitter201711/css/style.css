@@ -114,3 +114,28 @@ footer{
     margin: 1% 0;
     margin-bottom: 5%;
 }
+@media screen and (max-width: 990px){
+    
+    .wrap {
+        width: 100%;
+        margin: auto;
+    }
+    .section2 h2.title>div{
+        width: 60%;
+        margin: auto;
+    }
+    .campaign_btn {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .caution{
+        width: 90%;
+        margin: auto;
+    }
+    .caution >ul{
+        padding-left: 5%;
+    }
+
+}
