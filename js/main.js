@@ -34,7 +34,7 @@
     // $('#timer').countdown({until: new Date(2017,10,7,16,00), timezone: +9});
     var limit_date = new Date(2017,10,7,16,00);
     var now_date = new Date();
-    var campaign_banner = '<a target="_blank" href="/campaign"><img src="images/banner1.jpg" class="" /></a>'
+    var campaign_banner = '<a target="_blank" href="/campaign/twitter201711/"><img src="images/banner1.jpg" class="" /></a>'
     
     // 結果はb is bigger than a
     if (limit_date > now_date) {
