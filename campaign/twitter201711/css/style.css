@@ -16,6 +16,14 @@ body {
 h2{
     margin-bottom: 0 !important;
 }
+.notification ul{
+    list-style-type: disc;
+    padding-left: 5%;
+    font-size: 1.5vw;
+}
+.notification li:not(:last-child){
+    margin-bottom: 2%;
+}
 .title>div{
     padding: 3%;
 }
@@ -71,7 +79,7 @@ section:not(:last-child){
 .step2>div:nth-child(3){
     width: 92%;
 }
-.section4 p{
+.section5 p{
     text-align: center;
     width: 80%;
     margin: auto;
