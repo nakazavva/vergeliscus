@@ -575,6 +575,17 @@ footer p{
 .title{
     text-align: center;
 }
+
+.notice{
+    list-style-type: disc;
+    color: #fff;
+    font-size: 1vw;
+    padding: 1% 3%;
+    border: #fff solid 1px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+}
 @media screen and (max-width: 990px){
 
     body {
