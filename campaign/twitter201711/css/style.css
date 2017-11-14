@@ -1,9 +1,7 @@
 
 
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-html, body, main {
-    /* height: 100%; */
-}
+
 body {
     font-size: 2vw;
     background-color: #f0f6fd;
@@ -129,6 +127,11 @@ footer{
     padding: 1% 3%;
     border: #3273dc solid 1px;
 }
+
+.notice a{
+    color: #3273dc;
+    text-decoration: underline;
+}
 @media screen and (max-width: 990px){
     
     .wrap {
@@ -151,6 +154,20 @@ footer{
     }
     .caution >ul{
         padding-left: 5%;
+        font-size: 3vw;
     }
+
+    .notification ul{
+        font-size: 3vw;
+    }
+    .notice{
+        font-size: 3vw;
+        width: 90%;
+        margin: auto;
+    }
+    .notice ul li:first-child{
+        margin-bottom: 3%;
+    }
+
 
 }

@@ -1,9 +1,7 @@
 
 
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-html, body, main {
-    /* height: 100%; */
-}
+
 body {
     font-size: 1.4vw;
 }
@@ -66,9 +64,6 @@ section .content-wrap{
 .twitter>div:last-child{
     justify-self: center;
     /* padding-left: 5%; */
-}
-.section1{
-    /* height: 100vh; */
 }
 .section1 .wrap {
     width: 80%;
@@ -477,9 +472,6 @@ footer {
     align-items: center;
     width: 40%;
 }
-.sns>div{
-    /* margin: 1%; */
-}
 footer p{
     text-align: center;
     margin: 3% 0;
@@ -585,6 +577,10 @@ footer p{
     width: 70%;
     margin: auto;
     margin-bottom: 5%;
+}
+.notice a{
+    color: #fff;
+     text-decoration: underline;
 }
 @media screen and (max-width: 990px){
 
@@ -742,5 +738,16 @@ footer p{
     }
     .introduction {
         width: 48%;
+    }
+    .link{
+        font-size: 3vw;
+        width: 95%;
+    }
+    .notice{
+        width: 95%;
+        font-size: 3vw;
+    }
+    .notice ul li:first-child{
+        margin-bottom: 3%;
     }
 }
