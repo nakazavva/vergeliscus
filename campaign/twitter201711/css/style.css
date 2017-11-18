@@ -14,6 +14,9 @@ body {
 h2{
     margin-bottom: 0 !important;
 }
+.notification.is-danger{
+    text-align: center;
+}
 .notification ul{
     list-style-type: disc;
     padding-left: 5%;
@@ -159,6 +162,11 @@ footer{
 
     .notification ul{
         font-size: 3vw;
+    }
+
+    .notification.is-danger{
+        font-size: 4vw;
+        text-align: center;
     }
     .notice{
         font-size: 3vw;
